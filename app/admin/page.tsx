@@ -1,4 +1,4 @@
-import { TracksTable } from "@/components/tracks-table"
+import { TracksTable } from "../../components/tracks-table"
 export default function AdminPage() {
     return (
         <main>

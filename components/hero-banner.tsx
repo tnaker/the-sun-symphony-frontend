@@ -4,6 +4,7 @@
 // overlapping typography for the artist name and a sleek CTA.
 // -----------------------------------------------------------------------------
 import { Play } from 'lucide-react'
+import Link from "next/link";
 
 export function HeroBanner() {
   return (
@@ -25,22 +26,22 @@ export function HeroBanner() {
       />
 
       {/* Top bar */}
-      <header className="absolute inset-x-0 top-0 z-20 flex items-center justify-between px-4 py-5 md:px-8">
+      {/* <header className="absolute inset-x-0 top-0 z-20 flex items-center justify-between px-4 py-5 md:px-8">
         <span className="font-display text-lg uppercase tracking-widest text-foreground">
           NV<span className="text-primary">.</span>
         </span>
         <nav className="hidden items-center gap-8 font-mono text-xs uppercase tracking-widest text-muted-foreground md:flex">
-          <a href="#gear" className="transition-colors hover:text-foreground">
+          <Link href="/instrument" className="transition-colors hover:text-foreground">
             Nhạc Cụ
-          </a>
-          <a href="#" className="transition-colors hover:text-foreground">
+          </Link>
+          <Link href="/tour" className="transition-colors hover:text-foreground">
             Lịch Diễn
-          </a>
-          <a href="#" className="transition-colors hover:text-foreground">
+          </Link>
+          <Link href="/contact" className="transition-colors hover:text-foreground">
             Liên Hệ
-          </a>
+          </Link>
         </nav>
-      </header>
+      </header> */}
 
       {/* Centerpiece: giant overlapping typography */}
       <div className="relative z-10 flex flex-col items-center px-4 text-center">

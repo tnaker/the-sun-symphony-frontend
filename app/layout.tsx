@@ -3,6 +3,7 @@ import type { Metadata, Viewport } from 'next'
 import { Anton, Inter } from 'next/font/google'
 import './globals.css'
 import { GlobalAudioPlayer } from '@/components/global-audio-player'
+import { HeroBanner } from '@/components/hero-banner'
 import Link from 'next/link'
 
 const inter = Inter({
@@ -53,15 +54,28 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${inter.variable} ${anton.variable} bg-background`}>
       <body className="font-sans antialiased">
-        <header className="border-b border-border p-4"> 
-          <nav className="flex gap-6">
-            <Link href= "/"> Trang chủ </Link>
-            <Link href= "/tour"> Tour diễn </Link>
-            <Link href= "/admin"> Admin </Link>
+        <header className="absolute inset-x-0 top-0 z-20 flex items-center justify-between px-4 py-5 md:px-8">
+          <Link href="/" className="font-display text-lg uppercase tracking-widest text-foreground">
+            NV<span className="text-primary">.</span>
+          </Link>
+          <nav className="hidden items-center gap-8 font-mono text-xs uppercase tracking-widest text-muted-foreground md:flex">
+            <Link href="/instrument" className="transition-colors hover:text-foreground">
+              Nhạc Cụ
+            </Link>
+            <Link href="/tour" className="transition-colors hover:text-foreground">
+              Lịch Diễn
+            </Link>
+            <Link href="/video" className="transition-colors hover:text-foreground">
+              Khoảnh Khắc
+            </Link>
+            <Link href="/contact" className="transition-colors hover:text-foreground">
+              Liên Hệ
+            </Link>
           </nav>
         </header>
         {children}
         {process.env.NODE_ENV === 'production' && <Analytics />}
+        
         {/* Global audio player is sticky at the bottom of the viewport, so we render it here in the root layout so it is always present */}
         <GlobalAudioPlayer />
       </body>

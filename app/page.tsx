@@ -8,10 +8,12 @@
 import { GlobalAudioPlayer } from '@/components/global-audio-player'
 import { HeroBanner } from '@/components/hero-banner'
 import { InstrumentGallery } from '@/components/instrument-gallery'
+import Link from "next/link";
 
 export default function Page() {
   return (
     <main className="min-h-screen bg-background text-foreground">
+      {/* Hero banner */}
       <HeroBanner />
       <InstrumentGallery />
 
