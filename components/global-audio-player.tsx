@@ -41,6 +41,7 @@ export function GlobalAudioPlayer() {
   const [progress, setProgress] = useState(0) // seconds
   const [volume, setVolume] = useState(0.7)
   const [muted, setMuted] = useState(false)
+  const audioRef = useRef<HTMLAudioElement | null>(null);
 
   const track = PLAYLIST[trackIndex]
 
@@ -78,11 +79,23 @@ export function GlobalAudioPlayer() {
     setProgress(Number(e.target.value))
   }
 
+  const togglePlay = () => {
+    if (audioRef.current) {
+      if (isPlaying) {
+        audioRef.current.pause();
+      } else {
+        audioRef.current.play();
+      }
+      setIsPlaying(!isPlaying);
+    }
+  };
+
   const effectiveVolume = muted ? 0 : volume
   const progressPct = (progress / track.duration) * 100
 
   return (
     <div className="fixed bottom-0 left-0 z-50 w-full border-t border-border bg-card/95 backdrop-blur">
+      <audio ref={audioRef} src="/demo-track.mp3" preload="metadata" />
       <div className="mx-auto flex max-w-7xl flex-col gap-2 px-4 py-3 md:flex-row md:items-center md:gap-6 md:py-4">
         {/* --- Track info (left) --- */}
         <div className="flex min-w-0 items-center gap-3 md:w-64 md:shrink-0">
@@ -112,7 +125,7 @@ export function GlobalAudioPlayer() {
             </button>
             <button
               type="button"
-              onClick={() => setIsPlaying((p) => !p)}
+              onClick={togglePlay}
               aria-label={isPlaying ? 'Tạm dừng' : 'Phát'}
               className="grid size-11 place-items-center bg-primary text-primary-foreground transition-colors hover:bg-accent hover:text-accent-foreground"
             >

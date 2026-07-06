@@ -31,7 +31,6 @@ export default function Page() {
       {/* Spacer so the fixed player never covers footer content */}
       <div aria-hidden="true" className="h-28 md:h-24" />
 
-      <GlobalAudioPlayer />
     </main>
   )
 }

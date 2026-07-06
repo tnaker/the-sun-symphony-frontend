@@ -2,6 +2,8 @@ import { Analytics } from '@vercel/analytics/next'
 import type { Metadata, Viewport } from 'next'
 import { Anton, Inter } from 'next/font/google'
 import './globals.css'
+import { GlobalAudioPlayer } from '@/components/global-audio-player'
+import Link from 'next/link'
 
 const inter = Inter({
   subsets: ['latin'],
@@ -51,8 +53,17 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${inter.variable} ${anton.variable} bg-background`}>
       <body className="font-sans antialiased">
+        <header className="border-b border-border p-4"> 
+          <nav className="flex gap-6">
+            <Link href= "/"> Trang chủ </Link>
+            <Link href= "/tour"> Tour diễn </Link>
+            <Link href= "/admin"> Admin </Link>
+          </nav>
+        </header>
         {children}
         {process.env.NODE_ENV === 'production' && <Analytics />}
+        {/* Global audio player is sticky at the bottom of the viewport, so we render it here in the root layout so it is always present */}
+        <GlobalAudioPlayer />
       </body>
     </html>
   )
