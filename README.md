@@ -31,7 +31,10 @@ Theo lộ trình thực tập (Tuần 1 - Tuần 6), hệ thống đã hoàn thi
     * Bảng quản lý bài hát (Tracks Table) với đầy đủ tính năng CRUD UI và phân loại trạng thái (Bản nháp / Đã phát hành).
 
 ## 🛠 Hướng dẫn cài đặt (Installation)
-Yêu cầu hệ thống đã cài đặt Node.js. Chạy các lệnh sau trong Terminal:
+
+Yêu cầu hệ thống đã cài đặt **Node.js**.
+
+Chạy các lệnh sau trong Terminal:
 
 ```bash
 # Cài đặt thư viện
@@ -39,8 +42,9 @@ npm install
 
 # Khởi chạy môi trường phát triển
 npm run dev
+```
 
-## Hướng dẫn truy cập ứng dụng
+## 🌐 Hướng dẫn truy cập ứng dụng
 
 Sau khi khởi chạy dự án, truy cập ứng dụng tại:
 
