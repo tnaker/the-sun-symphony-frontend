@@ -22,12 +22,12 @@ export default function Page() {
         <h2 className="mx-auto max-w-3xl text-balance font-display text-4xl uppercase leading-[0.9] tracking-tight text-foreground md:text-6xl">
           Đón chờ đêm diễn <span className="text-primary">tiếp theo</span>
         </h2>
-        <a
-          href="#"
-          className="mt-8 inline-block border border-border px-8 py-4 font-mono text-xs uppercase tracking-widest text-foreground transition-colors hover:border-primary hover:text-primary"
-        >
-          Xem Lịch Diễn
-        </a>
+      <Link
+        href="/tour"
+        className="mt-8 inline-block border border-border px-8 py-4 font-mono text-xs uppercase tracking-widest text-foreground transition-colors hover:border-primary hover:text-primary"
+      >
+        Xem Lịch Diễn
+      </Link>
       </section>
 
       {/* Spacer so the fixed player never covers footer content */}

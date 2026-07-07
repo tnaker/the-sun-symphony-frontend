@@ -56,7 +56,7 @@ export default function RootLayout({
       <body className="font-sans antialiased">
         <header className="absolute inset-x-0 top-0 z-20 flex items-center justify-between px-4 py-5 md:px-8">
           <Link href="/" className="font-display text-lg uppercase tracking-widest text-foreground">
-            NV<span className="text-primary">.</span>
+            Trang Chủ <span className="text-primary">.</span>
           </Link>
           <nav className="hidden items-center gap-8 font-mono text-xs uppercase tracking-widest text-muted-foreground md:flex">
             <Link href="/instrument" className="transition-colors hover:text-foreground">
@@ -68,8 +68,19 @@ export default function RootLayout({
             <Link href="/video" className="transition-colors hover:text-foreground">
               Khoảnh Khắc
             </Link>
+            {/* Thêm link Nghệ Sĩ */}
+            <Link href="/artist" className="transition-colors hover:text-foreground">
+              Nghệ Sĩ
+            </Link>
+            {/* Thêm link Admin */}
+            {/* <Link href="/admin" className="transition-colors hover:text-foreground">
+              Admin
+            </Link> */}
             <Link href="/contact" className="transition-colors hover:text-foreground">
               Liên Hệ
+            </Link>
+            <Link href="/login" className="transition-colors hover:text-foreground">
+              Đăng Nhập
             </Link>
           </nav>
         </header>
