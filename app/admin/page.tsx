@@ -22,8 +22,14 @@ export default function AdminPage() {
   }, [router])
 
   const handleLogout = () => {
+    // 1. Xóa trạng thái đăng nhập
     localStorage.removeItem("isAdmin")
-    router.push("/")
+    
+    // 2. Báo hiệu cho SiteHeader cập nhật lại menu (Ẩn menu Admin)
+    window.dispatchEvent(new Event("auth-change"))
+    
+    // 3. Chuyển hướng về trang đăng nhập
+    router.push("/login")
   }
 
   // Tránh lỗi chớp màn hình Admin (Flash of unauthenticated content) trước khi bị redirect
