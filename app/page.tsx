@@ -5,6 +5,8 @@
 //   <InstrumentGallery />  -> components/instrument-gallery.tsx (+ instrument-card.tsx)
 //   <GlobalAudioPlayer />  -> components/global-audio-player.tsx (sticky bottom)
 // -----------------------------------------------------------------------------
+import { CareerHighlights } from '@/components/career-highlights';
+import { Discography } from '@/components/discography';
 import { GlobalAudioPlayer } from '@/components/global-audio-player'
 import { HeroBanner } from '@/components/hero-banner'
 import { InstrumentGallery } from '@/components/instrument-gallery'
@@ -12,10 +14,13 @@ import Link from "next/link";
 
 export default function Page() {
   return (
-    <main className="min-h-screen bg-background text-foreground">
+    <main className="min-h-screen bg-transparent text-foreground">
       {/* Hero banner */}
       <HeroBanner />
-      <InstrumentGallery />
+      {/* Phần Dấu ấn sự nghiệp (Trang 8 Portfolio) */}
+      <CareerHighlights />
+
+      <Discography />
 
       {/* Simple closing band */}
       <section className="border-t border-border px-4 py-24 text-center md:px-8">
@@ -29,7 +34,7 @@ export default function Page() {
         Xem Lịch Diễn
       </Link>
       </section>
-
+      
       {/* Spacer so the fixed player never covers footer content */}
       <div aria-hidden="true" className="h-28 md:h-24" />
 

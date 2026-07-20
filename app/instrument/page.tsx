@@ -2,7 +2,7 @@ import {InstrumentGallery} from "@/components/instrument-gallery"; // Cập nh�
 
 export default function InstrumentPage() {
   return (
-    <main className="min-h-screen bg-neutral-950 pt-24 pb-32 px-6">
+    <main className="min-h-screen bg-transparent pt-24 pb-32 px-6">
       <div className="max-w-6xl mx-auto">
         
         {/* Render lưới hiển thị nhạc cụ */}

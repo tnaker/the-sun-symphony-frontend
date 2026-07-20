@@ -24,7 +24,7 @@ export default function LoginPage() {
   }
 
   return (
-    <main className="flex min-h-screen items-center justify-center bg-background px-4">
+    <main className="flex min-h-screen items-center justify-center bg-transparent px-4">
       <div className="w-full max-w-md rounded-lg border border-border bg-card p-8 shadow-2xl">
         <div className="mb-8 flex flex-col items-center text-center">
           <div className="mb-4 flex size-12 items-center justify-center rounded-full bg-primary/10">

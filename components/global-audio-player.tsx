@@ -24,9 +24,9 @@ interface Track {
 }
 
 const PLAYLIST: Track[] = [
-  { title: 'Static Bloom', artist: 'The Sun Symphony', cover: '/images/track-cover.png', duration: 214 },
-  { title: 'Low End Theory', artist: 'The Sun Symphony', cover: '/images/track-cover.png', duration: 187 },
-  { title: 'Backing Lights', artist: 'The Sun Symphony', cover: '/images/track-cover.png', duration: 243 },
+  { title: 'Static Bloom', artist: 'LANY S', cover: '/images/track-cover.png', duration: 214 },
+  { title: 'Low End Theory', artist: 'LANY S', cover: '/images/track-cover.png', duration: 187 },
+  { title: 'Backing Lights', artist: 'LANY S', cover: '/images/track-cover.png', duration: 243 },
 ]
 
 function formatTime(seconds: number) {

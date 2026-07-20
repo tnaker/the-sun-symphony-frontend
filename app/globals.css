@@ -48,76 +48,82 @@
 }
 
 :root {
-  color-scheme: dark;
-  /* Deep dark concert palette with a warm amber/crimson accent */
-  --background: oklch(0.16 0.006 60);
-  --foreground: oklch(0.97 0.01 90);
-  --card: oklch(0.2 0.008 60);
-  --card-foreground: oklch(0.97 0.01 90);
-  --popover: oklch(0.2 0.008 60);
-  --popover-foreground: oklch(0.97 0.01 90);
-  /* Stage-light amber as the primary accent */
-  --primary: oklch(0.78 0.17 62);
-  --primary-foreground: oklch(0.16 0.02 60);
-  --secondary: oklch(0.26 0.01 60);
-  --secondary-foreground: oklch(0.97 0.01 90);
-  --muted: oklch(0.26 0.01 60);
-  --muted-foreground: oklch(0.72 0.02 70);
-  --accent: oklch(0.62 0.22 25);
-  --accent-foreground: oklch(0.98 0.01 90);
+  color-scheme: light;
+  /* Pastel Holographic Palette - Tone sáng ngọc trai, hồng & xanh baby */
+  --background: oklch(0.99 0.01 330 / 65%); 
+  --foreground: oklch(0.30 0.05 330);
+  --card: oklch(0.97 0.02 335 / 80%); /* Card cũng hơi trong suốt một chút */
+  --card-foreground: oklch(0.30 0.05 330);
+  --popover: oklch(0.97 0.02 335);
+  --popover-foreground: oklch(0.30 0.05 330);
+  /* Primary: Pastel Pink (Hồng thạch anh) */
+  --primary: oklch(0.75 0.15 340);
+  --primary-foreground: oklch(1 0 0); /* Trắng tinh */
+  /* Secondary: Baby Blue */
+  --secondary: oklch(0.85 0.10 230);
+  --secondary-foreground: oklch(0.30 0.05 330);
+  --muted: oklch(0.92 0.03 335);
+  --muted-foreground: oklch(0.60 0.06 330);
+  --accent: oklch(0.90 0.06 335);
+  --accent-foreground: oklch(0.30 0.05 330);
   --destructive: oklch(0.62 0.22 25);
-  --border: oklch(1 0 0 / 12%);
-  --input: oklch(1 0 0 / 15%);
-  --ring: oklch(0.78 0.17 62);
-  --chart-1: oklch(0.78 0.17 62);
-  --chart-2: oklch(0.62 0.22 25);
-  --chart-3: oklch(0.72 0.02 70);
-  --chart-4: oklch(0.5 0.01 60);
-  --chart-5: oklch(0.3 0.01 60);
-  --radius: 0.25rem;
-  --sidebar: oklch(0.2 0.008 60);
-  --sidebar-foreground: oklch(0.97 0.01 90);
-  --sidebar-primary: oklch(0.78 0.17 62);
-  --sidebar-primary-foreground: oklch(0.16 0.02 60);
-  --sidebar-accent: oklch(0.26 0.01 60);
-  --sidebar-accent-foreground: oklch(0.97 0.01 90);
-  --sidebar-border: oklch(1 0 0 / 12%);
-  --sidebar-ring: oklch(0.78 0.17 62);
+  --border: oklch(0 0 0 / 8%);
+  --input: oklch(0 0 0 / 10%);
+  --ring: oklch(0.75 0.15 340);
+  
+  --chart-1: oklch(0.75 0.15 340); /* Pink */
+  --chart-2: oklch(0.85 0.10 230); /* Blue */
+  --chart-3: oklch(0.80 0.12 300); /* Purple */
+  --chart-4: oklch(0.90 0.15 80);  /* Yellow */
+  --chart-5: oklch(0.85 0.12 160); /* Mint */
+  --radius: 0.75rem; /* Bo góc tròn trịa hơn cho nữ tính */
+  
+  --sidebar: oklch(0.99 0.01 330);
+  --sidebar-foreground: oklch(0.30 0.05 330);
+  --sidebar-primary: oklch(0.75 0.15 340);
+  --sidebar-primary-foreground: oklch(1 0 0);
+  --sidebar-accent: oklch(0.92 0.03 335);
+  --sidebar-accent-foreground: oklch(0.30 0.05 330);
+  --sidebar-border: oklch(0 0 0 / 8%);
+  --sidebar-ring: oklch(0.75 0.15 340);
 }
 
 .dark {
+  /* Chuyển Dark Mode thành tông "Galaxy Holographic" Tím/Hồng đậm */
   color-scheme: dark;
-  --background: oklch(0.145 0 0);
-  --foreground: oklch(0.985 0 0);
-  --card: oklch(0.205 0 0);
-  --card-foreground: oklch(0.985 0 0);
-  --popover: oklch(0.205 0 0);
-  --popover-foreground: oklch(0.985 0 0);
-  --primary: oklch(0.922 0 0);
-  --primary-foreground: oklch(0.205 0 0);
-  --secondary: oklch(0.269 0 0);
-  --secondary-foreground: oklch(0.985 0 0);
-  --muted: oklch(0.269 0 0);
-  --muted-foreground: oklch(0.708 0 0);
-  --accent: oklch(0.269 0 0);
-  --accent-foreground: oklch(0.985 0 0);
-  --destructive: oklch(0.704 0.191 22.216);
-  --border: oklch(1 0 0 / 10%);
-  --input: oklch(1 0 0 / 15%);
-  --ring: oklch(0.556 0 0);
-  --chart-1: oklch(0.87 0 0);
-  --chart-2: oklch(0.556 0 0);
-  --chart-3: oklch(0.439 0 0);
-  --chart-4: oklch(0.371 0 0);
-  --chart-5: oklch(0.269 0 0);
-  --sidebar: oklch(0.205 0 0);
-  --sidebar-foreground: oklch(0.985 0 0);
-  --sidebar-primary: oklch(0.488 0.243 264.376);
-  --sidebar-primary-foreground: oklch(0.985 0 0);
-  --sidebar-accent: oklch(0.269 0 0);
-  --sidebar-accent-foreground: oklch(0.985 0 0);
-  --sidebar-border: oklch(1 0 0 / 10%);
-  --sidebar-ring: oklch(0.556 0 0);
+  --background: oklch(0.15 0.03 300);
+  --foreground: oklch(0.95 0.02 330);
+  --card: oklch(0.20 0.04 300);
+  --card-foreground: oklch(0.95 0.02 330);
+  --popover: oklch(0.20 0.04 300);
+  --popover-foreground: oklch(0.95 0.02 330);
+  --primary: oklch(0.75 0.15 340);
+  --primary-foreground: oklch(0.99 0 0);
+  --secondary: oklch(0.25 0.06 230);
+  --secondary-foreground: oklch(0.95 0.02 330);
+  --muted: oklch(0.25 0.04 300);
+  --muted-foreground: oklch(0.70 0.05 330);
+  --accent: oklch(0.30 0.08 320);
+  --accent-foreground: oklch(0.95 0.02 330);
+  --destructive: oklch(0.60 0.20 25);
+  --border: oklch(1 1 1 / 10%);
+  --input: oklch(1 1 1 / 15%);
+  --ring: oklch(0.75 0.15 340);
+  
+  --chart-1: oklch(0.75 0.15 340);
+  --chart-2: oklch(0.65 0.12 230);
+  --chart-3: oklch(0.60 0.14 300);
+  --chart-4: oklch(0.70 0.15 80);
+  --chart-5: oklch(0.65 0.12 160);
+  
+  --sidebar: oklch(0.20 0.04 300);
+  --sidebar-foreground: oklch(0.95 0.02 330);
+  --sidebar-primary: oklch(0.75 0.15 340);
+  --sidebar-primary-foreground: oklch(0.99 0 0);
+  --sidebar-accent: oklch(0.30 0.08 320);
+  --sidebar-accent-foreground: oklch(0.95 0.02 330);
+  --sidebar-border: oklch(1 1 1 / 10%);
+  --sidebar-ring: oklch(0.75 0.15 340);
 }
 
 @layer base {
@@ -125,7 +131,7 @@
     @apply border-border outline-ring/50;
   }
   body {
-    @apply bg-background text-foreground;
+    @apply bg-background text-foreground transition-colors duration-500 ease-in-out;
   }
 }
 
@@ -136,22 +142,25 @@
   height: 0.85rem;
   width: 0.85rem;
   border-radius: 9999px;
-  background: var(--foreground);
+  background: var(--primary);
   cursor: pointer;
   border: none;
-  transition: background 0.2s ease;
+  transition: transform 0.2s ease, background 0.2s ease;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
 .slider:hover::-webkit-slider-thumb {
-  background: var(--primary);
+  transform: scale(1.2);
 }
 .slider::-moz-range-thumb {
   height: 0.85rem;
   width: 0.85rem;
   border-radius: 9999px;
-  background: var(--foreground);
+  background: var(--primary);
   cursor: pointer;
   border: none;
+  transition: transform 0.2s ease;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
 .slider:hover::-moz-range-thumb {
-  background: var(--primary);
+  transform: scale(1.2);
 }

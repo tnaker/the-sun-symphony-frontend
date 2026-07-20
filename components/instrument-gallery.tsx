@@ -47,8 +47,7 @@ export function InstrumentGallery() {
             </h2>
           </div>
           <p className="max-w-sm text-pretty text-sm leading-relaxed text-muted-foreground">
-            Mỗi thiết bị đều được tinh tuyển cho những đêm diễn live. Không qua
-            kỹ xảo phòng thu, chỉ có chất âm chân thực nhất.
+            Mỗi thiết bị trong bộ sưu tập này đều là phần không thể thiếu trong hành trình tạo nên âm thanh live đặc trưng của LANY S.
           </p>
         </header>
 

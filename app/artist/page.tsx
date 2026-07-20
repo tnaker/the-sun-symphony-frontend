@@ -2,7 +2,7 @@ import { ArtistBiography } from "@/components/artist-bio"; // Đảm bảo đún
 
 export default function ArtistPage() {
   return (
-    <main className="min-h-screen bg-background pt-24 pb-32">
+    <main className="min-h-screen bg-transparent pt-24 pb-32">
       {/* Component Tiểu sử Nghệ sĩ */}
       <ArtistBiography />
     </main>

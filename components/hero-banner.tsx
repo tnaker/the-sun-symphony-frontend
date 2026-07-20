@@ -4,75 +4,101 @@
 // overlapping typography for the artist name and a sleek CTA.
 // -----------------------------------------------------------------------------
 import { Play } from 'lucide-react'
-import Link from "next/link";
 
 export function HeroBanner() {
   return (
-    <section className="relative flex h-screen min-h-[600px] w-full items-center justify-center overflow-hidden">
-      {/* Dark image background */}
+    <section className="relative flex h-screen min-h-[700px] w-full items-center overflow-hidden">
       <img
-        src="/images/hero-artist.png"
-        alt="The Sun Symphony biểu diễn live trên sân khấu mờ khói"
-        className="absolute inset-0 h-full w-full object-cover"
+        src="/images/homepage_artist.jpg"
+        alt="LANY S biểu diễn live trên sân khấu mờ khói"
+        className="absolute inset-0 h-full w-full scale-[1.05] object-cover opacity-100 brightness-[1.05] saturate-[1.1] contrast-[1.04]"
       />
-      {/* Darkening overlays for contrast */}
+
       <div
         aria-hidden="true"
-        className="absolute inset-0 bg-background/70"
-      />
-      <div
-        aria-hidden="true"
-        className="absolute inset-0 bg-gradient-to-b from-background via-transparent to-background"
+        className="absolute inset-0 bg-[radial-gradient(circle_at_20%_20%,rgba(125,211,252,0.05),transparent_28%),radial-gradient(circle_at_80%_80%,rgba(255,183,221,0.05),transparent_34%)]"
       />
 
-      {/* Top bar */}
-      {/* <header className="absolute inset-x-0 top-0 z-20 flex items-center justify-between px-4 py-5 md:px-8">
-        <span className="font-display text-lg uppercase tracking-widest text-foreground">
-          NV<span className="text-primary">.</span>
-        </span>
-        <nav className="hidden items-center gap-8 font-mono text-xs uppercase tracking-widest text-muted-foreground md:flex">
-          <Link href="/instrument" className="transition-colors hover:text-foreground">
-            Nhạc Cụ
-          </Link>
-          <Link href="/tour" className="transition-colors hover:text-foreground">
-            Lịch Diễn
-          </Link>
-          <Link href="/contact" className="transition-colors hover:text-foreground">
-            Liên Hệ
-          </Link>
-        </nav>
-      </header> */}
+<div className="relative z-10 flex h-full w-full items-end px-8 pb-10 md:px-12 lg:px-16">
 
-      {/* Centerpiece: giant overlapping typography */}
-      <div className="relative z-10 flex flex-col items-center px-4 text-center">
-        <span className="mb-6 font-mono text-xs uppercase tracking-[0.4em] text-primary md:text-sm">
-          Sống Động · Mạnh Mẽ · Chân Thực
-        </span>
+<div
+  className="
+    w-fit
+    max-w-4xl
+    rounded-[1.8rem]
+    border border-white/15
+    bg-white/[0.02]
+    backdrop-blur-md
+    shadow-[0_10px_40px_rgba(0,0,0,0.08)]
+    px-6
+    py-4
+  "
+>
 
-        <h1 className="flex flex-col items-center font-display uppercase leading-[0.8] text-foreground">
-          <span className="text-[16vw] md:text-[13vw] lg:text-[11rem]">The Sun</span>
-          <span className="-mt-[3vw] text-[16vw] text-primary md:-mt-6 md:text-[13vw] lg:text-[11rem]">
-            Symphony
-          </span>
-        </h1>
+    <div className="flex flex-col gap-6 md:flex-row md:items-center md:justify-between">
 
-        <p className="mt-6 max-w-md text-pretty text-sm leading-relaxed text-muted-foreground md:text-base">
-          Đam mê nhịp bass, cháy hết mình cùng những dải âm vocal. Ca khúc mới
-          nhất đã ra mắt — hãy bật max âm lượng.
+      {/* DESCRIPTION -------------------------------- */}
+
+      <div className="flex-1">
+
+        <p className="max-w-3xl text-lg leading-9 font-medium text-foreground/90 drop-shadow-sm">
+          Chào mừng đến với Website của LANY S. 
+          Đây là nơi mình thể hiện những gì mình đã làm và đạt được ngày hôm nay.
+          Mong rằng những giá trị mình muốn truyền đạt sẽ chạm đến những nguười dõi theo mình.
+
         </p>
 
-        {/* Sleek CTA */}
-        <a
-          href="#"
-          className="group mt-10 inline-flex items-center gap-3 bg-primary px-8 py-4 font-mono text-xs uppercase tracking-widest text-primary-foreground transition-colors hover:bg-accent hover:text-accent-foreground"
-        >
-          <Play className="size-4 fill-current" aria-hidden="true" />
-          Thưởng Thức Ca Khúc Mới
-        </a>
       </div>
 
-      {/* Scroll hint */}
-      <span className="absolute bottom-28 left-1/2 z-10 -translate-x-1/2 font-mono text-[0.65rem] uppercase tracking-[0.3em] text-muted-foreground">
+
+      {/* BUTTON ------------------------------------- */}
+
+      <div className="shrink-0 self-start md:self-auto">
+
+        <a
+          href="/artist"
+          className="
+            group
+            inline-flex
+            items-center
+            gap-3
+            rounded-full
+            border
+            border-pink-300/70
+            bg-white/70
+            px-8
+            py-4
+            font-mono
+            text-sm
+            font-bold
+            uppercase
+            tracking-[0.35em]
+            text-slate-900
+            backdrop-blur-xl
+            transition-all
+            duration-300
+            hover:-translate-y-1
+            hover:bg-pink-500
+            hover:text-white
+            hover:border-pink-500
+            hover:shadow-[0_0_30px_rgba(236,72,153,0.45)]
+          "
+        >
+          <Play className="size-5 fill-current transition-transform group-hover:scale-110" />
+
+          Đọc Thêm
+
+        </a>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</div>
+
+      <span className="absolute bottom-6 left-1/2 z-10 -translate-x-1/2 font-mono text-[0.65rem] uppercase tracking-[0.3em] text-white/70 md:bottom-8">
         Cuộn Xuống
       </span>
     </section>

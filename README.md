@@ -40,4 +40,6 @@ Truy cập vào Live Demo hoặc chạy local để xem ứng dụng.
 * **Mật khẩu:** `123456`
 
 ## 📄 Bản quyền
+<<<<<<< HEAD
 Mã nguồn được phát triển phục vụ kỳ thực tập tại THE SUN SYMPHONY (2026).
+=======
