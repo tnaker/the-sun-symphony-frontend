@@ -21,24 +21,24 @@ interface Track {
 const INITIAL_TRACKS: Track[] = [
   {
     id: "1",
-    title: "Nắng Giao Hưởng",
-    releaseDate: "2024-11-15",
-    streams: 1284530,
+    title: "Tình Tình Tứ",
+    releaseDate: "2025-07-17",
+    streams: 3747,
     status: "published",
   },
   {
     id: "2",
-    title: "Nhịp Bass Đêm Trắng",
-    releaseDate: "2024-09-02",
-    streams: 842190,
+    title: "Con Cũng Muốn Tết Mà",
+    releaseDate: "2026-02-07",
+    streams: 14199,
     status: "published",
   },
   {
     id: "3",
-    title: "Ánh Đèn Sân Khấu",
+    title: "Thích Tết",
     releaseDate: "2025-01-20",
-    streams: 12045,
-    status: "draft",
+    streams: 1721,
+    status: "published",
   },
 ]
 
