@@ -38,7 +38,7 @@ export function SiteHeader() {
       {/* Logo / Tên Trang */}
       <Link 
         href="/" 
-        className="relative z-[60] font-display text-xl font-bold uppercase tracking-widest text-slate-900 drop-shadow-sm"
+        className="relative z-[60] font-display text-xl font-bold uppercase tracking-widest text-foreground drop-shadow-sm"
       >
         Trang Chủ <span className="text-primary">.</span>
       </Link>
@@ -54,7 +54,7 @@ export function SiteHeader() {
 
       {/* --- NÚT HAMBURGER (CHỈ HIỆN TRÊN MOBILE) --- */}
       <button
-        className="relative z-[60] p-2 text-slate-900 md:hidden"
+        className="relative z-[60] p-2 text-foreground md:hidden"
         onClick={() => setIsOpen(!isOpen)}
         aria-label="Thanh điều hướng"
       >
@@ -72,7 +72,7 @@ export function SiteHeader() {
             <Link 
               key={link.name} 
               href={link.href} 
-              className="font-display text-4xl uppercase tracking-widest text-slate-900 transition-colors hover:text-primary active:scale-95"
+              className="font-display text-4xl uppercase tracking-widest text-foreground transition-colors hover:text-primary active:scale-95"
             >
               {link.name}
             </Link>
