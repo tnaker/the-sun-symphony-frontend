@@ -24,12 +24,10 @@ Dự án áp dụng phong cách thiết kế **Dark-theme**, **Glassmorphism**, 
 ## ✨ Tính năng cốt lõi (Key Features)
 Hệ thống đã hoàn thiện các Use Cases trọng tâm sau (Tuần 1 - Tuần 6):
 
-1. **Global Audio Player:** Trình phát nhạc bám đáy màn hình (Sticky Bottom Player) hoạt động xuyên suốt, không bị ngắt quãng khi người dùng chuyển trang.
-2. **Instrument Gallery:** Bố cục lưới trưng bày thiết bị biểu diễn live với hiệu ứng hover tối ưu trải nghiệm thị giác.
-3. **Video Modal:** Tích hợp cửa sổ nổi (Modal) phát MV YouTube mượt mà, giữ chân người dùng trên trang hiện tại.
-4. **Artist Biography:** Bố cục chia cột (Split Layout) hiển thị chân dung nghệ sĩ ghim tĩnh (sticky) kết hợp cùng nghệ thuật chữ ngoại cỡ.
-5. **Interactive Tour Schedule:** Danh sách sự kiện được thiết kế gọn gàng với các tag trạng thái "Mua vé" / "Hết vé" và popup thanh toán mượt mà.
-6. **Protected Admin Dashboard:** 
+1. **Video Modal:** Tích hợp cửa sổ nổi (Modal) phát MV YouTube mượt mà, giữ chân người dùng trên trang hiện tại.
+2. **Artist Biography:** Bố cục chia cột (Split Layout) hiển thị chân dung nghệ sĩ ghim tĩnh (sticky) kết hợp cùng nghệ thuật chữ ngoại cỡ.
+3. **Interactive Tour Schedule:** Danh sách sự kiện được thiết kế gọn gàng với các tag trạng thái "Mua vé" / "Hết vé" và popup thanh toán mượt mà.
+4. **Protected Admin Dashboard:** 
    * Form Đăng nhập giả lập bảo mật.
    * Quản lý bài hát (Tracks Table) và Lịch diễn (Tour List) với đầy đủ tính năng thêm, sửa, xóa (CRUD UI) thao tác trực tiếp trên giao diện.
 
